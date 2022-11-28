@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "esnext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "declaration": true,
+    "declarationDir": "./types",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "noUnusedLocals": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@kuinne/shared": ["./packages/shared/index.ts"],
+      "@kuinne/shared/*": ["./packages/shared/*"],
+      "@kuinne/core": ["./packages/core/index.ts"],
+      "@kuinne/core/*": ["./packages/core/*"]
+    },
+    "types": ["vitest/globals"]
+  },
+  "include": [
+    "packages",
+    "docs/.vitepress/components/*.vue",
+    "docs/.vitepress/*.ts",
+    "meta",
+    "vitest.config.ts",
+    "*.d.ts",
+    "playgrounds",
+    "playgrounds/react/src"
+  ],
+  "exclude": ["node_modules", "**/**/*.md", "**/dist", "packages/.test", "packages/_docs", "dist"]
+}

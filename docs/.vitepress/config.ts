@@ -14,7 +14,7 @@ const DefaultSideBar = [
 ];
 
 export default {
-  base: '/kuinne/',
+  base: '/pnpm_monorepo/',
   title: 'velvet',
   lang: 'zh-CN',
   themeConfig: {
